@@ -1,3 +1,7 @@
+body {
+  padding: 0 5px
+}
+
 /* import fonts - work sans */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -139,7 +143,7 @@ header {
 
 /* experience section related styles */
 
-.experience-main-section{
+.experience-main-section {
   flex-direction: column;
 }
 
@@ -171,13 +175,13 @@ header {
 
 }
 
-.experience-cards-title{
+.experience-cards-title {
   color: #131313;
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-.experience-cards{
+.experience-cards {
   padding: 30px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -185,19 +189,22 @@ header {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.experienc-btn-main{
+.experienc-btn-main {
   padding: 40px;
   margin-left: -80px;
   margin-top: -70px;
 }
+
 .experience-section-img {
- width: 100%;
+  width: 100%;
 }
-#year-btn{
+
+#year-btn {
   font-weight: 700;
   font-size: 4rem;
 }
-#experience-btn{
+
+#experience-btn {
   width: 100%;
   font-weight: 500;
   font-size: 1.2rem;
@@ -265,25 +272,30 @@ header {
 .sponsor-companies img {
   filter: grayscale(100%);
 }
+
 /* footer related styles */
 footer {
   background-color: #FFF4E7;
   text-align: center;
-  margin: 50px auto;
+  margin: 0px auto;
+  margin-top: 50px;
   padding: 38px 100px;
   border-radius: 8px;
   max-width: 1440px;
-  
+
 }
+
 /* responsive media query */
 @media screen and (max-width:576px) {
+
   .navbar,
   .nav-links,
   .teams,
   .experience-section {
     flex-direction: column;
   }
-  .experienc-btn-main{
+
+  .experienc-btn-main {
     margin-top: 50px;
     margin-left: 0px;
     width: 100%;
@@ -332,16 +344,38 @@ footer {
 
 /* medium size device */
 @media screen and (min-width:576px) and (max-width: 992px) {
-  .teams {
+
+  .teams,
+  .navbar,
+  .experience-section {
     flex-direction: column;
+  }
+
+  .experienc-btn-main {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links,
+  .brand {
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+  }
+
+  .some-facts {
+    margin-left: 80px;
   }
 
   .our-features {
     margin-left: -100px;
-  }
-
-  .some-facts {
-    margin-left: 175px;
   }
 
   .facts-container {
