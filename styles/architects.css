@@ -15,8 +15,9 @@
   display: flex;
 }
 
-.text-primary {
-  color: #FF900E;
+/* dark-01 */
+.text-dark-01 {
+  color: #131313;
 }
 
 /* dark-02 */
@@ -136,6 +137,72 @@ header {
   font-weight: 500;
 }
 
+/* experience section related styles */
+
+.experience-main-section{
+  flex-direction: column;
+}
+
+.experience-section {
+  margin: 100px 80px;
+  gap: 130px;
+}
+
+.experience-left-side {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.experience-title {
+  max-width: 460px;
+  border-left: 5px solid #FF900E;
+  color: #131313;
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding-left: 21px;
+}
+
+.experience-description {
+  color: #727272;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: -25px;
+
+}
+
+.experience-cards-title{
+  color: #131313;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.experience-cards{
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.experienc-btn-main{
+  padding: 40px;
+  margin-left: -80px;
+  margin-top: -70px;
+}
+.experience-section-img {
+ width: 100%;
+}
+#year-btn{
+  font-weight: 700;
+  font-size: 4rem;
+}
+#experience-btn{
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 /* some fact related styles */
 
 .some-facts {
@@ -198,14 +265,28 @@ header {
 .sponsor-companies img {
   filter: grayscale(100%);
 }
-
+/* footer related styles */
+footer {
+  background-color: #FFF4E7;
+  text-align: center;
+  margin: 50px auto;
+  padding: 38px 100px;
+  border-radius: 8px;
+  max-width: 1440px;
+  
+}
 /* responsive media query */
 @media screen and (max-width:576px) {
-
   .navbar,
   .nav-links,
-  .teams {
+  .teams,
+  .experience-section {
     flex-direction: column;
+  }
+  .experienc-btn-main{
+    margin-top: 50px;
+    margin-left: 0px;
+    width: 100%;
   }
 
   .team-img-container,
@@ -217,7 +298,8 @@ header {
   .feature-description {
     max-width: 400px;
   }
-  .our-features{
+
+  .our-features {
     margin-left: 20px;
   }
 
@@ -248,13 +330,6 @@ header {
 
 }
 
-footer{
-  background-color: #FFF4E7;
-  text-align: center;
-  margin: 50px 60px;
-  padding: 38px 100px;
-  border-radius: 8px;
-}
 /* medium size device */
 @media screen and (min-width:576px) and (max-width: 992px) {
   .teams {
@@ -265,9 +340,10 @@ footer{
     margin-left: -100px;
   }
 
-  .some-facts{
+  .some-facts {
     margin-left: 175px;
   }
+
   .facts-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
